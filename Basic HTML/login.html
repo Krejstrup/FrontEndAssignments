@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Login page</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="https://www.google.com"> Google</a></li>
+        <li><a href="https://www.microsoft.com"> Microsoft</a></li>
+        <li><a href="https://www.codepen.io"> CodePen</a></li>
+      </ul>
+      <a href="index.html">Back to documents.</a>
+    </nav>
+    <div>
+      <h2>Login</h2>
+
+      <form action="index.html" method="POST">
+        <!-- Man postar informationen till en server med method=POST-->
+        <label for="Login">Login:</label><br />
+        <input type="text" id="Login" name="login" placeholder="login" /><br />
+        <label for="pswrd">Password:</label><br />
+        <input type="password" id="pswrd" name="pswrd" /><br />
+        <br />
+        <input type="reset" />
+        <input type="submit" value="Submit Login" />
+      </form>
+    </div>
+
+    <footer>
+      <span>©2021 Richard Krejstrup.</span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+.GridContainer {
+  display: grid;
+  /* grid-template-columns: auto auto auto;*/
+  grid-template-areas:
+    "Name Links Links "
+    "Main Main Main "
+    "Footer Footer Footer ";
+}
+.GridItem {
+  display: grid;
+}
+
+body {
+  margin: 0;
+  /*padding: 50px 75px;*/
+  width: 1024px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*-----------------*/
+header {
+  float: left;
+  background-color: darkgrey;
+  width: 100%;
+  grid-area: Name;
+}
+h1 {
+  margin: 16px 10px 17px 10px;
+}
+/*-----------------*/
+
+.NavRuler {
+  background-color: cadetblue;
+  width: 100%;
+  grid-area: Links;
+  display: flex;
+}
+
+.Links {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  padding: 25px 0px;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  background-color: cornflowerblue;
+}
+
+.BackLink {
+  padding: 35px 0px;
+  margin: 0;
+  background-color: rgb(27, 99, 128);
+}
+
+/*-----------------*/
+
+.FormContainer {
+  background-color: burlywood;
+  grid-area: Main;
+  width: 100%;
+}
+
+h2 {
+  padding-left: 30px;
+  background-color: darkgoldenrod;
+  display: block;
+}
+
+hr {
+  display: box;
+  width: 100%;
+  margin: 0px;
+  height: 0px;
+  border: 0px;
+  clear: both;
+}
+
+form {
+  display: inline;
+  width: auto;
+  padding-left: 30px;
+  background-color: darksalmon;
+}
+
+.button {
+  background-color: #2da4a8;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/*-----------------*/
+
+footer {
+  text-align: center;
+  padding: 15px 24px;
+  background-color: blueviolet;
+  grid-area: Footer;
+}

@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  width: 1024; /* VARFÖR FUNKAR INTE DETTA?? */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.GridContainer {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "main main main main right right"
+    "footer footer footer footer footer footer";
+}
+
+.GridItem {
+  display: grid;
+}
+
+.Header {
+  grid-area: header;
+}
+
+.CiteName {
+  float: left;
+  width: 20%;
+  background-color: #9e9d89;
+}
+
+.NavRuler {
+  float: left;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  background-color: #e4d3cf;
+}
+
+.Logotype {
+  height: 100px;
+}
+
+.RulerList {
+  /* list with links */
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  object-position: bottom;
+}
+.MenuItem {
+  padding: 16px;
+  object-position: bottom;
+}
+
+.ArticleContainer {
+  grid-area: main;
+  display: flexbox;
+  flex-direction: column;
+  background-color: #b67162;
+}
+.ArticleSectionTest {
+  display: flex;
+}
+.Articles {
+  width: 50%;
+  padding: 5px;
+  background-color: #e2bcb7;
+}
+
+.SideSpace {
+  padding: 10px;
+  grid-area: right;
+  background-color: #9e9d89;
+}
+
+footer {
+  text-align: center;
+  grid-area: footer;
+  padding: 16px;
+  background-color: brown;
+}
+
+.PageImg {
+  max-width: 60px;
+  float: left;
+  margin-right: 10px;
+}
+.BallImg {
+  max-width: 65px;
+  float: left;
+  margin-right: 10px;
+}
+
+h2 {
+  margin-bottom: 0px;
+}
